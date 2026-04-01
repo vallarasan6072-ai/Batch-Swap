@@ -1,0 +1,125 @@
+/* Title */
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+/* Navigation Button */
+.nav-btn {
+  background: linear-gradient(135deg, #6c63ff, #5a54d1);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5a54d1, #4b45b5);
+}
+
+/* Container */
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* Card */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  margin: 12px 0;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Left Section */
+.left {
+  display: flex;
+  align-items: center;
+}
+
+/* Avatar */
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #6c63ff;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+/* Info */
+.info h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.batch {
+  font-size: 13px;
+  color: #666;
+}
+
+.arrow {
+  margin: 0 5px;
+  color: #999;
+}
+
+/* Status */
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+/* Status Colors */
+.pending {
+  border-left: 5px solid orange;
+}
+
+.approved {
+  border-left: 5px solid #2ecc71;
+}
+
+.rejected {
+  border-left: 5px solid #e74c3c;
+}
+
+.approved .status {
+  background: #eafaf1;
+  color: #2ecc71;
+}
+
+.rejected .status {
+  background: #fdecea;
+  color: #e74c3c;
+}

@@ -1,0 +1,24 @@
+<h2 class="title">📊 Admin Dashboard</h2>
+
+<div class="container">
+
+  @for (r of requests; track r._id) {
+    <div class="card" [ngClass]="r.status">
+      
+      <div class="info">
+        <h4>{{r.student}}</h4>
+        <p>{{r.currentClass}} ➡ {{r.requestedClass}}</p>
+      </div>
+
+      <span class="status">{{r.status}}</span>
+
+    </div>
+  }
+
+  <div class="top-bar">
+  <button class="nav-btn" routerLink="/requests">
+    ➜ Manage Requests
+  </button>
+</div>
+
+</div>

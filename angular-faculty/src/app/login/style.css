@@ -1,0 +1,30 @@
+.login-container {
+  height: 100vh;
+  background: linear-gradient(to bottom, #8fa8d6, #d8a7c7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0a2a4a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

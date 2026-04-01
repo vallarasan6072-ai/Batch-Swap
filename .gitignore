@@ -1,0 +1,69 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+angular-faculty/dist
+angular-faculty/tmp
+angular-faculty/out-tsc
+angular-faculty/bazel-out
+
+# Node
+angular-faculty/node_modules
+angular-faculty/npm-debug.log
+angular-faculty/yarn-error.log
+
+# IDEs and editors
+angular-faculty/.idea/
+angular-faculty/.project
+angular-faculty/.classpath
+angular-faculty/.c9/
+angular-faculty/*.launch
+angular-faculty/.settings/
+angular-faculty/*.sublime-workspace
+
+# Visual Studio Code
+angular-faculty/.vscode/*
+angular-faculty/!.vscode/settings.json
+angular-faculty/!.vscode/tasks.json
+angular-faculty/!.vscode/launch.json
+angular-faculty/!.vscode/extensions.json
+angular-faculty/.history/*
+
+# Miscellaneous
+angular-faculty/.angular/cache
+angular-faculty/.sass-cache/
+angular-faculty/connect.lock
+angular-faculty/coverage
+angular-faculty/libpeerconnection.log
+angular-facultytestem.log
+angular-faculty/typings
+angular-faculty__screenshots__/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+react-student/node_modules
+react-student/.pnp
+react-student/.pnp.js
+
+# testing
+react-student/coverage
+
+# production
+react-student/build
+
+# misc
+react-student/.DS_Store
+react-student/.env.local
+react-student/.env.development.local
+react-student/.env.test.local
+react-student/.env.production.local
+
+react-student/npm-debug.log*
+react-student/yarn-debug.log*
+react-student/yarn-error.log*
+
+backend/node_modules
