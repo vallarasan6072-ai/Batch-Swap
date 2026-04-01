@@ -15,21 +15,21 @@ export interface SwapRequest {
 })
 export class RequestService {
 
-  private API_URL = 'http://localhost:5000/api';
+  private API_URL = ' https://batch-swap.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 
-  // ✅ GET ALL REQUESTS
+  //  GET ALL REQUESTS
   getRequests(): Observable<SwapRequest[]> {
     return this.http.get<SwapRequest[]>(this.API_URL);
   }
 
-  // ✅ APPROVE
+  //  APPROVE
   approveRequest(id: string) {
     return this.http.put(`${this.API_URL}/approve/${id}`, {});
   }
 
-  // ✅ REJECT
+  //  REJECT
   rejectRequest(id: string) {
     return this.http.put(`${this.API_URL}/reject/${id}`, {});
   }

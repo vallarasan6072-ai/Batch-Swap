@@ -20,15 +20,15 @@ function Login() {
       return;
     }
 
-    axios.post("http://localhost:5000/api/auth/login", form)
+    axios.post(" https://batch-swap.onrender.com/api/auth/login", form)
       .then((res) => {
 
-        // ✅ Save user
+        //  Save user
         localStorage.setItem("user", JSON.stringify(res.data));
 
-        setMessage("✅ Login Successful");
+        setMessage(" Login Successful");
 
-        // 👉 ROLE BASED NAVIGATION
+        //  ROLE BASED NAVIGATION
         if (res.data.role === "staff") {
           navigate("/admin");
         } else {

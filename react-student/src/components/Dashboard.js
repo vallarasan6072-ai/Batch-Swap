@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';   // ✅ ADD THIS
+import { useNavigate } from 'react-router-dom';   // ADD THIS
 import './styles.css';
 
 function Dashboard() {
 
-  const navigate = useNavigate();   // ✅ ADD THIS
+  const navigate = useNavigate();   //  ADD THIS
 
   const user = JSON.parse(localStorage.getItem("user")); // get logged user
 
@@ -14,7 +14,7 @@ function Dashboard() {
   const [newBatch, setNewBatch] = useState('');
   const [notification, setNotification] = useState('');
 
-  const API_URL = "http://localhost:5000/api/swap";
+  const API_URL = " https://batch-swap.onrender.com/api/swap";
 
   const handleSubmit = () => {
 
@@ -31,15 +31,15 @@ function Dashboard() {
     })
     .then(() => {
 
-      setNotification("✅ Request Submitted Successfully!");
+      setNotification(" Request Submitted Successfully!");
 
       // clear form
       setCurrentBatch('');
       setNewBatch('');
 
-      // ✅ REDIRECT TO STATUS PAGE AFTER 1 SECOND
+      //  REDIRECT TO STATUS PAGE AFTER 1 SECOND
       setTimeout(() => {
-        navigate("/status");   // ⭐ THIS IS THE LINE YOU ASKED
+        navigate("/status");   //  THIS IS THE LINE YOU ASKED
       }, 1000);
 
     })
@@ -67,7 +67,7 @@ function Dashboard() {
           type="text"
           placeholder="Enter Name"
           value={name}
-          readOnly   // ✅ auto-filled from login
+          readOnly   //  auto-filled from login
         />
 
         <input

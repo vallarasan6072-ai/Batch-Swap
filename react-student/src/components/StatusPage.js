@@ -14,7 +14,7 @@ function StatusPage() {
 
   useEffect(() => {
 
-    axios.get(`http://localhost:5000/api/status/${user.username}`)
+    axios.get(` https://batch-swap.onrender.com/api/status/${user.username}`)
       .then(res => {
 
         setData({

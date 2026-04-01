@@ -12,7 +12,7 @@ export interface Request {
 
 @Injectable({ providedIn: 'root' })
 export class RequestService {
-  private apiUrl = 'http://localhost:3000/api/requests';
+  private apiUrl = ' https://batch-swap.onrender.com/api/requests';
 
   constructor(private http: HttpClient) {}
 

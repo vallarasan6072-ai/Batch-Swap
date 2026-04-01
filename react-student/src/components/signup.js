@@ -21,9 +21,9 @@ function Signup() {
       return;
     }
 
-    axios.post("http://localhost:5000/api/auth/signup", form)
+    axios.post(" https://batch-swap.onrender.com/api/auth/signup", form)
       .then(() => {
-        setMessage("✅ Signup Successful");
+        setMessage(" Signup Successful");
 
         setTimeout(() => {
           navigate("/");
@@ -61,7 +61,7 @@ function Signup() {
           }
         />
 
-        {/* ✅ ROLE SELECT */}
+        {/*  ROLE SELECT */}
         <select
           value={form.role}
           onChange={(e) =>
