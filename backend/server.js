@@ -10,4 +10,4 @@ app.use(express.json());
 app.use("/api/auth", require("./routes/auth.js"));
 app.use("/api", require("./routes/swap.js"));
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+app.listen(8080, () => console.log("Server running on port 8080"));
