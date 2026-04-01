@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  base = "http://localhost:5000";
+  base = "https://batch-swap.onrender.com/api";
 
   constructor(private http: HttpClient) {}
 
